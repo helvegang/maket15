@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'ttlakes';
+	font-display: swap;
+	src: url("./fonts/TTLakes-Regular.eot");
+	src: local("O"), url("./fonts/TTLakes-Regular.woff") format("woff"), 
+			url("./fonts/TTLakes-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ttlakesextrabold';
+	font-display: swap;
+	src: url("./fonts/TTLakes-ExtraBold.eot");
+	src: local("O"), url("./fonts/TTLakes-ExtraBold.woff") format("woff"), 
+			url("./fonts/TTLakes-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'ttlakesbold';
+	font-display: swap;
+	src: url("./fonts/TTLakes-Regular.eot");
+	src: local("O"), url("./fonts/TTLakes-Bold.woff") format("woff"), 
+			url("./fonts/TTLakes-Bold.ttf") format("truetype");
+}
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F8F8;
+}
+.header {
+    margin: 0px;
+    padding: 16px; /* изменяемое значение для разных разрешений */
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+.header__text {
+    color: #7E7E82;
+    font-family: ttlakes;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 24px;
+}
+.swiper-container {
+    background: #F2F2F2;
+    position: relative;
+    padding-bottom: 24px;
+}
+.swiper-wrapper {
+    padding: 16px;
+}
+.swiper-container .swiper-slide {
+    width: auto;
+}
+.swiper-container__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 14px;
+    width: 240px; /* изменяемое значение для разных разрешений */
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    height: 72px;
+}
+.links__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 14px;
+    width: 224px; /* изменяемое значение для разных разрешений */
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    height: 72px;
+}
+.swiper-container__link-apple {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.swiper-container__link--hp {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.swiper-container__logo {
+    margin-right: auto;
+}
+.swipper__arrow {
+    width: 40px;
+    height: 40px;
+}
+.swiper-container .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #B5B6BC;
+    ;
+}
+.swiper-pagination {
+ position: absolute;
+}
+.links {
+    display: none;
+}
+.button-open__image {
+    padding: 0px;
+}
+.button-open__button {
+  font-family: 'ttlakes';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #F8F8F8;
+  border: 0px;
+  padding: 0px;
+  margin-left: 16px;
+}
+
+.button-open {
+    display: none;
+    margin-top: 8px;
+}
+
+
+@media (min-width: 768px){
+    .header {
+        padding: 16px 24px; /* изменяемое значение для разных разрешений */
+    }
+    .swiper-container {
+        display: none;
+    }
+       
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 24px; /* изменяемое значение для разных разрешений */
+        padding: 24px 24px; /* изменяемое значение для разных разрешений */
+        padding-bottom: 16px;
+    }
+    .links--invisible {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    
+    .button-open {
+        display: block;
+        padding-left: 32px;/* изменяемое значение для разных разрешений */
+    }
+}   
+    
+@media (min-width: 1120px) {
+    .header {
+        padding: 16px 32px; /* изменяемое значение для разных разрешений */
+    }
+    .links__item {
+        width: 240px; /* изменяемое значение для разных разрешений */
+    }
+    .links {
+        gap: 16px 32px; /* изменяемое значение для разных разрешений */
+        padding: 24px 32px; /* изменяемое значение для разных разрешений */
+        padding-bottom: 16px;
+    }
+    .links--invisible {
+        max-height: 200px;
+        overflow: hidden;
+    }
+    .button-open {
+        padding-left: 39px;/* изменяемое значение для разных разрешений */
+    }
+    }
